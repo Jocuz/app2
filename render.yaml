@@ -1,0 +1,12 @@
+services:
+  - type: db
+    name: postgresql
+    env: postgres
+    plan: free
+    envVars:
+      - key: POSTGRES_DB
+        value: "agenda"
+      - key: POSTGRES_USER
+        value: "username"
+      - key: POSTGRES_PASSWORD
+        value: "password"
